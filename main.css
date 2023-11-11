@@ -12,10 +12,6 @@ body {
     align-items: center;
 }
 
-#mainHeader img {
-    width: auto;
-}
-
 #mainHeader h1 {
     margin: 0;
 }
@@ -24,12 +20,18 @@ body {
     justify-items: center;
 }
 
+.captionHeader img {
+    width:auto;
+}
+
+
 .bannerHeader {
     position: relative;
 }
 
 .bannerHeader img {
-    max-width: 100%;
+    height:100%;
+    width:100%;
     object-fit: cover;
 }
 
