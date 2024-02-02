@@ -4,19 +4,110 @@
     <link href="main.css" rel="stylesheet">
     <meta charset="UTF-8" />
     <title>The Official Website of the State of Texas</title>
+    <script type="text/javascript" src="form_check.js"></script>
 </head>
 <body>
     <header id="mainHeader" class="captionHeader">
-        <img src="img/texas_seal.png"/>
+        <img src="img/texas_seal.png" alt="Texas Seal"/>
         <h1>Welcome to Texas</h1>
     </header>
     <nav>
-        <a href="home.html">Home</a>
-        <a href="explore.html">Explore Texas</a>
-        <a href="https://www.texas.gov/living-in-texas/texas-voter-registration/">Voter Registration</a>
-        <a href="https://www.texas.gov/driver-services/texas-vehicle-registration/">Vehicle Registration</a>
-        <a href="https://www.texas.gov/driver-services/texas-driver-license-id-renewals-replacements/">DL / ID Renewal</a>
+        <a >Home</a>
+        <a href="explore.html" target="_self">Explore Texas</a>
+        <a href="https://www.texas.gov/living-in-texas/texas-voter-registration/" target="_blank">Voter Registration</a>
+        <a href="https://www.texas.gov/driver-services/texas-vehicle-registration/" target="_blank">Vehicle Registration</a>
+        <a href="https://www.texas.gov/driver-services/texas-driver-license-id-renewals-replacements/" target="_blank">DL / ID Renewal</a>
     </nav>
-    
+    <div class="main">
+        <section>
+            <h2>Welcome to the State of Texas Homepage!</h2>
+            <p>Check the Explore Texas page for some popular destinations in Texas, and feel free to submit any questions or comments on your right!</p>
+            <h2>Texas at a glance (Top Cities by Population)</h2>
+            <table>
+                <tr>
+                    <th>City</th>
+                    <th>Population</th>
+                    <th>Year Incorporated</th>
+                    <th>Region</th>
+                    <th>Classification</th>
+                    <th>Income</th>
+                </tr>
+                <tr>
+                    <td>Houston</td>
+                    <td>2,302,878</td>
+                    <td>1837</td>
+                    <td>Gulf Coast</td>
+                    <td>Urban</td>
+                    <td>$60,440</td>
+                </tr>
+                <tr>
+                    <td>San Antonio</td>
+                    <td>1,472,909</td>
+                    <td>1837</td>
+                    <td>Hill Country</td>
+                    <td>Urban</td>
+                    <td>$59,594</td>
+                </tr>
+                <tr>
+                    <td>Dallas</td>
+                    <td>1,299,544</td>
+                    <td>1856</td>
+                    <td>Prairies and Lakes</td>
+                    <td>Urban</td>
+                    <td>$63,985</td>
+                </tr>
+                <tr>
+                    <td>Austin</td>
+                    <td>974,447</td>
+                    <td>1839</td>
+                    <td>Hill Country</td>
+                    <td>Urban</td>
+                    <td>$86,556</td>
+                </tr>
+                <tr>
+                    <td>Forth Worth</td>
+                    <td>956,709</td>
+                    <td>1874</td>
+                    <td>Prairies and Lakes</td>
+                    <td>Urban</td>
+                    <td>$35,428</td>
+                </tr>
+            </table>
+        </section>
+        <aside>
+            <h2>Contact Us</h2>
+            <form>
+                <ul>
+                    <li>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="First Name"/>
+                    </li>
+                    <li>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name"/>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email"/>
+                    </li>
+                    <li>
+                        <label for="email_confirm">Email Confirmation:</label>
+                        <input type="email" id="email_confirm" name="email_confirm" placeholder="Confirm Email"/>
+                    </li>
+                    <li>
+                        <p id="email_notify"></p>
+                    </li>
+                    <li>
+                        <label for="message">Message:</label>
+                        <textarea id="messageBox" type="text" id="message" name="question" placeholder="Questions / Comments"></textarea>
+                    </li>
+                    <li id="submitButton">
+                        <button type="submit">Submit Question/Query</button>
+                    </li>
+                </ul>
+
+            </form>
+        </aside>
+    </div>
 </body>
 </html>
