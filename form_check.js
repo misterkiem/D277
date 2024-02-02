@@ -1,12 +1,12 @@
 function checkEmails(email, email_confirm, email_notify) {
     if (email.value === email_confirm.value)
     {
-        email_notify.textContent = "valid email";
+        email_notify.textContent = "Valid Email";
         email_notify.style.color = "green";
     }
     else
     {
-        email_notify.textContent = "email fields do not match.";
+        email_notify.textContent = "Email fields do not match.";
         email_notify.style.color = "red";
     }};
 
