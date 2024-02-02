@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     color: #dddd;
     background-color: #112233;
@@ -71,7 +75,71 @@ nav a {
     margin-right: 1px;
 }
 
+a:visited, a:hover {
+    text-decoration: none;
+    color: #dddd;
+}
+
 nav a:hover {
     background-color: #dddd;
     color: #112233;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    background: cornflowerblue;
+    padding: 20px;
+}
+
+aside h1, h2, ul, ol {
+    text-align: center;
+    align-self: center;
+    list-style-position: inside;
+}
+
+form ul{
+    list-style-type: none;
+    text-align: left;
+    max-lines: 10;
+}
+
+#submitButton {
+    text-align: center;
+    align-self: center;
+list-style-type: none;
+}
+
+form button{
+    align-self: center;
+}
+
+#messageBox{
+    height: 300px;
+    width:100%;
+}
+
+section {
+    float: left;
+    width: 70%;
+    padding: 20px;
+}
+
+section ul{
+    list-style-type: none;
+}
+
+section h1, h2, td, th, ul, p{
+    text-align: center;
+}
+
+section table{
+    margin-left: auto;;
+    margin-right: auto;;
+}
+
+.main::after {
+    content: "";
+    display: table;
+    clear: both;
 }
